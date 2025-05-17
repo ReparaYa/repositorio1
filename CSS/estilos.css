@@ -1,0 +1,154 @@
+body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      /* Degradado azul oscuro predominante con amarillo */
+      background: linear-gradient(135deg, #002a66 70%, #ffd600 30%);
+      color: #fff;
+      position: relative;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    /* Adornos grises semitransparentes */
+    body::before, body::after {
+      content: "";
+      position: fixed;
+      width: 400px;
+      height: 400px;
+      background: rgba(128,128,128,0.1);
+      border-radius: 50%;
+      z-index: 0;
+      filter: blur(100px);
+    }
+
+    body::before {
+      top: 10%;
+      left: 5%;
+    }
+
+    body::after {
+      bottom: 10%;
+      right: 5%;
+    }
+
+    header {
+      background: transparent;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+      box-shadow: none;
+      position: relative;
+      z-index: 1;
+    }
+
+    .container {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+      position: relative;
+      z-index: 1;
+    }
+
+    .section-title {
+      font-size: 30px;
+      margin-bottom: 20px;
+      color: #ffffff;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+      border-bottom: 3px solid #ffd600;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
+    section {
+      margin-bottom: 60px;
+    }
+
+    p, li {
+      font-size: 18px;
+      line-height: 1.7;
+      color: #fff;
+      text-shadow: 0 0 3px rgba(0,0,0,0.4);
+    }
+
+    .equipo-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 30px;
+    }
+
+    .miembro {
+      background: rgba(255 255 255 / 0.15);
+      padding: 20px;
+      border-radius: 15px;
+      text-align: center;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+      transition: transform 0.3s ease;
+      color: white;
+    }
+
+    .miembro:hover {
+      transform: scale(1.03);
+      background: rgba(255 255 255 / 0.25);
+    }
+
+    .miembro img {
+      width: 100%;
+      max-height: 240px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 15px;
+      border: 2px solid #ffd600;
+    }
+
+    .miembro h3 {
+      margin: 0 0 10px;
+      font-size: 20px;
+      color: #ffd600;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.7);
+    }
+
+    .miembro p {
+      background: #ffd600;
+      color: #002a66;
+      padding: 6px 12px;
+      border-radius: 5px;
+      display: inline-block;
+      font-weight: bold;
+      text-shadow: none;
+    }
+
+    .objetivos ol {
+      padding-left: 20px;
+    }
+
+    .objetivos li {
+      margin-bottom: 15px;
+    }
+
+    .disenos img {
+      width: 100%;
+      max-width: 500px;
+      border-radius: 12px;
+      margin: 10px 0;
+      border: 2px solid #ffd600;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: rgba(0,0,0,0.3);
+      color: #fff;
+      position: relative;
+      z-index: 1;
+    }
+
+    .grafica {
+      max-width: 700px;
+      margin: 20px auto;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+      border-radius: 15px;
+      overflow: hidden;
+      background: rgba(255 255 255 / 0.1);
+      padding: 10px;
+    }
