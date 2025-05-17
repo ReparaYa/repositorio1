@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Repara Ya</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      /* Degradado azul oscuro predominante con amarillo */
+      background: linear-gradient(135deg, #002a66 70%, #ffd600 30%);
+      color: #fff;
+      position: relative;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    /* Adornos grises semitransparentes */
+    body::before, body::after {
+      content: "";
+      position: fixed;
+      width: 400px;
+      height: 400px;
+      background: rgba(128,128,128,0.1);
+      border-radius: 50%;
+      z-index: 0;
+      filter: blur(100px);
+    }
+
+    body::before {
+      top: 10%;
+      left: 5%;
+    }
+
+    body::after {
+      bottom: 10%;
+      right: 5%;
+    }
+
+    header {
+      background: transparent;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+      box-shadow: none;
+      position: relative;
+      z-index: 1;
+    }
+
+    .container {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+      position: relative;
+      z-index: 1;
+    }
+
+    .section-title {
+      font-size: 30px;
+      margin-bottom: 20px;
+      color: #ffffff;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+      border-bottom: 3px solid #ffd600;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
+    section {
+      margin-bottom: 60px;
+    }
+
+    p, li {
+      font-size: 18px;
+      line-height: 1.7;
+      color: #fff;
+      text-shadow: 0 0 3px rgba(0,0,0,0.4);
+    }
+
+    .equipo-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 30px;
+    }
+
+    .miembro {
+      background: rgba(255 255 255 / 0.15);
+      padding: 20px;
+      border-radius: 15px;
+      text-align: center;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+      transition: transform 0.3s ease;
+      color: white;
+    }
+
+    .miembro:hover {
+      transform: scale(1.03);
+      background: rgba(255 255 255 / 0.25);
+    }
+
+    .miembro img {
+      width: 100%;
+      max-height: 240px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 15px;
+      border: 2px solid #ffd600;
+    }
+
+    .miembro h3 {
+      margin: 0 0 10px;
+      font-size: 20px;
+      color: #ffd600;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.7);
+    }
+
+    .miembro p {
+      background: #ffd600;
+      color: #002a66;
+      padding: 6px 12px;
+      border-radius: 5px;
+      display: inline-block;
+      font-weight: bold;
+      text-shadow: none;
+    }
+
+    .objetivos ol {
+      padding-left: 20px;
+    }
+
+    .objetivos li {
+      margin-bottom: 15px;
+    }
+
+    .disenos img {
+      width: 100%;
+      max-width: 500px;
+      border-radius: 12px;
+      margin: 10px 0;
+      border: 2px solid #ffd600;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: rgba(0,0,0,0.3);
+      color: #fff;
+      position: relative;
+      z-index: 1;
+    }
+
+    .grafica {
+      max-width: 700px;
+      margin: 20px auto;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+      border-radius: 15px;
+      overflow: hidden;
+      background: rgba(255 255 255 / 0.1);
+      padding: 10px;
+    }
+
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Repara Ya</h1>
+  <p>Soluciones cercanas, seguras y confiables</p>
+</header>
+
+<div class="container">
+
+  <section class="pregunta-problema">
+    <h2 class="section-title">Pregunta Problema</h2>
+    <p>¿Cómo a través de una aplicación podemos mejorar la comunicación entre locales y clientes para encontrar sitios donde se puedan arreglar dispositivos electrónicos?</p>
+  </section>
+
+  <section class="objetivo">
+    <h2 class="section-title">Objetivo Principal</h2>
+    <p>
+      En ocasiones, los clientes tienen dificultad para encontrar servicios confiables y cercanos para reparar sus dispositivos electrónicos y electrodomésticos. La falta de información y la desconfianza en la honestidad y la calidad de los servicios generan confusión y frustración en los usuarios. Repara Ya es una aplicación que pretende brindar una mayor accesibilidad a la hora de buscar una solución a los equipos electrodomésticos, otorgando información de un local o un técnico cercano, así brindando la mejor opción.
+    </p>
+  </section>
+
+  <section class="grafica">
+    <img src="/mnt/data/269b27f1-b697-44d5-8f33-2422e86b974b.png" alt="Gráfica de utilidad de la aplicación" />
+  </section>
+
+  <section class="equipo">
+    <h2 class="section-title">Equipo de Trabajo</h2>
+    <div class="equipo-grid">
+      <div class="miembro">
+        <img src="jonathan_gomez.jpg" alt="Jonathan Gómez">
+        <h3>Jonathan Gómez</h3>
+        <p>Líder de Equipo</p>
+      </div>
+      <div class="miembro">
+        <img src="felipe_munoz.jpg" alt="Felipe Muñoz">
+        <h3>Felipe Muñoz</h3>
+        <p>Diseño de Aplicación</p>
+      </div>
+      <div class="miembro">
+        <img src="cristian_jimenez.jpg" alt="Cristian Jiménez">
+        <h3>Cristian Jiménez</h3>
+        <p>Programador</p>
+      </div>
+      <div class="miembro">
+        <img src="alejandro_rojas.jpg" alt="Alejandro Rojas">
+        <h3>Alejandro Rojas</h3>
+        <p>Gestión de Base de Datos</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="objetivos">
+    <h2 class="section-title">Objetivos del Proyecto</h2>
+    <ol>
+      <li>Identificar y resolver problemas reales en la app usando programación y herramientas como UML, prototipos y mockups para diseñar soluciones prácticas.</li>
+      <li>Aprender a crear y gestionar una base de datos con MySQL y Workbench para organizar bien la información de la app.</li>
+      <li>Usar lo aprendido para resolver problemas paso a paso con lógica, creando y probando funciones en Python para la app de reparación.</li>
+      <li>Crear una función en la app que asigne al técnico más cercano al cliente usando ubicaciones y un algoritmo de distancia.</li>
+      <li>Aprender a estructurar y documentar un proyecto tecnológico, desde el problema hasta su desarrollo.</li>
+    </ol>
+  </section>
+
+  <section class="disenos">
+    <h2 class="section-title">Diseños de la Aplicación</h2>
+    <img src="diseno1.png" alt="Diseño de la App 1">
+    <img src="diseno2.png" alt="Diseño de la App 2">
+  </section>
+
+</div>
+
+<footer>
+  <p>© 2025 Repara Ya – Proyecto Educativo</p>
+</footer>
+
+</body>
+</html>
+<img src="img/jonathan_gomez.jpg" alt="Jonathan Gómez">
+<img src="img/felipe_munoz.jpg" alt="Felipe Muñoz">
+<img src="img/cristian_jimenez.jpg" alt="Cristian Jiménez">
+<img src="img/alejandro_rojas.jpg" alt="Alejandro Rojas">
+<img src="img/diseno1.png" alt="Diseño de la App 1">
+<img src="img/diseno2.png" alt="Diseño de la App 2">
